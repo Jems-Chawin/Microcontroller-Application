@@ -5,22 +5,24 @@
 		<item key="DIALOG_Y_ORIGIN" value="308"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="buffer"/>
+		<item key="selection" value="TIM_OCMODE"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="TIM_OCMODE"/>
+			<item value="CCR"/>
 			<item value="dma_res_buffer"/>
 			<item value="res_adc_dma"/>
 			<item value="_weak"/>
 			<item value="sendName"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="buffer"/>
 			<item value="adc_dma"/>
-			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
