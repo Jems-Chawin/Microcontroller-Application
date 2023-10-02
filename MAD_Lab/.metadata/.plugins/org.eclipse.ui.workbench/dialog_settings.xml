@@ -21,5 +21,12 @@
 	<section name="EditorSelectionDialog">
 	</section>
 	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.debug.ui"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

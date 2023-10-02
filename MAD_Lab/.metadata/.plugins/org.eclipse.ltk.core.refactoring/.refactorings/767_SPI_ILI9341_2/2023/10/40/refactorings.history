@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;767_SPI_ILI9341_2/Drivers/ILI9341/shanpic&apos; to &apos;shanpic.h&apos;" description="Rename resource &apos;shanpic&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/ILI9341/shanpic" name="shanpic.h" stamp="1696165072858" updateReferences="true"/>
+</session>

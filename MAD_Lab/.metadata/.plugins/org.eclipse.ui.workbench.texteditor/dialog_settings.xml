@@ -5,13 +5,14 @@
 		<item key="DIALOG_Y_ORIGIN" value="308"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="TIM_OCMODE"/>
+		<item key="selection" value="spi"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="spi"/>
 			<item value="TIM_OCMODE"/>
 			<item value="CCR"/>
 			<item value="dma_res_buffer"/>

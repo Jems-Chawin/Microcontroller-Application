@@ -1,10 +1,16 @@
-13:35:51 **** Incremental Build of configuration Debug for project Lab_06 ****
+16:34:22 **** Incremental Build of configuration Debug for project Lab_06 ****
 make -j8 all 
+arm-none-eabi-gcc -o "Lab_06.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Jems\STM32CubeIDE\MAD_Lab\Lab_06\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab_06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab_06.elf
+ 
 arm-none-eabi-size   Lab_06.elf 
+arm-none-eabi-objdump -h -S  Lab_06.elf  > "Lab_06.list"
    text	   data	    bss	    dec	    hex	filename
   16924	    100	   2276	  19300	   4b64	Lab_06.elf
 Finished building: default.size.stdout
  
+Finished building: Lab_06.list
+ 
 
-13:35:51 Build Finished. 0 errors, 0 warnings. (took 202ms)
+16:34:23 Build Finished. 0 errors, 0 warnings. (took 650ms)
 

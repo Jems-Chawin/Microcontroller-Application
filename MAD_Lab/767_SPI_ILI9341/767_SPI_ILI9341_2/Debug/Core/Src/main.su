@@ -1,0 +1,7 @@
+../Drivers/CMSIS/Include/core_cm7.h:2229:22:SCB_EnableICache	4	static,ignoring_inline_asm
+../Drivers/CMSIS/Include/core_cm7.h:2281:22:SCB_EnableDCache	24	static,ignoring_inline_asm
+../Core/Src/main.c:69:10:rgb_to_uint16	24	static
+../Core/Src/main.c:93:5:main	512	static
+../Core/Src/main.c:290:6:SystemClock_Config	232	static
+../Core/Src/main.c:351:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:374:6:Error_Handler	4	static
