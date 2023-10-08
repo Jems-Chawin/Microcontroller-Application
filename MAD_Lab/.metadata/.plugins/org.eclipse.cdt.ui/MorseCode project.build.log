@@ -1,0 +1,20 @@
+15:04:21 **** Incremental Build of configuration Debug for project MorseCode project ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:97:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   97 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "MorseCode project.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Jems\STM32CubeIDE\MAD_Lab\MorseCode project\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MorseCode project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MorseCode project.elf
+ 
+arm-none-eabi-size   MorseCode\ project.elf 
+arm-none-eabi-objdump -h -S  MorseCode\ project.elf  > "MorseCode project.list"
+   text	   data	    bss	    dec	    hex	filename
+  16152	     20	   1828	  18000	   4650	MorseCode project.elf
+Finished building: default.size.stdout
+ 
+Finished building: MorseCode project.list
+ 
+
+15:04:22 Build Finished. 0 errors, 1 warnings. (took 1s.65ms)
+
