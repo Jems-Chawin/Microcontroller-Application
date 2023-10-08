@@ -1,0 +1,46 @@
+21:15:52 **** Incremental Build of configuration Debug for project USART ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:183:78: warning: multi-character character constant [-Wmultichar]
+  183 |                         HAL_UART_Transmit(&huart3, (uint8_t*)&"\n\r", strlen('\n\r'), 1000);
+      |                                                                              ^~~~~~
+../Core/Src/main.c:183:78: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  183 |                         HAL_UART_Transmit(&huart3, (uint8_t*)&"\n\r", strlen('\n\r'), 1000);
+      |                                                                              ^~~~~~
+      |                                                                              |
+      |                                                                              int
+In file included from ../Core/Src/main.c:26:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'int'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:187:78: warning: multi-character character constant [-Wmultichar]
+  187 |                         HAL_UART_Transmit(&huart3, (uint8_t*)&"\n\r", strlen('\n\r'), 1000);
+      |                                                                              ^~~~~~
+../Core/Src/main.c:187:78: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  187 |                         HAL_UART_Transmit(&huart3, (uint8_t*)&"\n\r", strlen('\n\r'), 1000);
+      |                                                                              ^~~~~~
+      |                                                                              |
+      |                                                                              int
+In file included from ../Core/Src/main.c:26:
+C:\ST\STM32CubeIDE_1.13.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'int'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:61:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   61 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "USART.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Jems\STM32CubeIDE\MAD_Lab\pre exam\USART\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART.elf
+ 
+arm-none-eabi-size   USART.elf 
+arm-none-eabi-objdump -h -S  USART.elf  > "USART.list"
+   text	   data	    bss	    dec	    hex	filename
+  15220	    116	   1812	  17148	   42fc	USART.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART.list
+ 
+
+21:15:53 Build Finished. 0 errors, 5 warnings. (took 1s.270ms)
+

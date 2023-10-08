@@ -1,0 +1,52 @@
+11:42:55 **** Incremental Build of configuration Debug for project Timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'displayNumber':
+../Core/Src/main.c:51:9: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+   51 |         snprintf(buffer, 100, "%.2d:%.2d\r\n", count/60, count%60);
+      |         ^~~~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:51:9: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+   51 |         snprintf(buffer, 100, "%.2d:%.2d\r\n", count/60, count%60);
+      |         ^~~~~~~~
+../Core/Src/main.c:51:9: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../Core/Src/main.c:51:35: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+   51 |         snprintf(buffer, 100, "%.2d:%.2d\r\n", count/60, count%60);
+      |                                ~~~^            ~~~~~~~~
+      |                                   |                 |
+      |                                   int               long unsigned int
+      |                                %.2ld
+../Core/Src/main.c:51:40: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+   51 |         snprintf(buffer, 100, "%.2d:%.2d\r\n", count/60, count%60);
+      |                                     ~~~^                 ~~~~~~~~
+      |                                        |                      |
+      |                                        int                    long unsigned int
+      |                                     %.2ld
+../Core/Src/main.c:52:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   52 |         HAL_UART_Transmit(&huart3, (uint8_t *) buffer, strlen(buffer), 100);
+      |                                                        ^~~~~~
+../Core/Src/main.c:24:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   23 | #include "gpio.h"
+  +++ |+#include <string.h>
+   24 | 
+../Core/Src/main.c:52:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   52 |         HAL_UART_Transmit(&huart3, (uint8_t *) buffer, strlen(buffer), 100);
+      |                                                        ^~~~~~
+../Core/Src/main.c:52:56: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "Timer.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Jems\STM32CubeIDE\MAD_Lab\pre exam\Timer\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Timer.elf
+ 
+arm-none-eabi-size   Timer.elf 
+arm-none-eabi-objdump -h -S  Timer.elf  > "Timer.list"
+   text	   data	    bss	    dec	    hex	filename
+  19100	    100	   2196	  21396	   5394	Timer.elf
+Finished building: default.size.stdout
+ 
+Finished building: Timer.list
+ 
+
+11:42:56 Build Finished. 0 errors, 6 warnings. (took 801ms)
+
