@@ -5572,3 +5572,33 @@ java.lang.Exception: File: C:\Users\Jems\STM32CubeIDE\MAD_Lab\LCD_TFT_Template\D
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:954)
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1307)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+!SESSION 2023-10-08 17:07:32.505 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-08 17:07:49.948
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-08 17:07:49.948
+!MESSAGE Log4j2 initialized with config file C:\Users\Jems\STM32CubeIDE\MAD_Lab\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-08 17:07:59.776
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-08 17:08:48.496 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-08 17:09:35.173
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-08 17:09:35.173
+!MESSAGE Log4j2 initialized with config file C:\Users\Jems\STM32CubeIDE\MAD_Lab\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-08 17:09:42.267
+!MESSAGE Started RMI Server, listening on port 41337

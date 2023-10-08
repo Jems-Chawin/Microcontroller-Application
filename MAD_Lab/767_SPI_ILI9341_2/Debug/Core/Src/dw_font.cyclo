@@ -1,0 +1,15 @@
+../Core/Src/dw_font.c:63:14:binary_search	4
+../Core/Src/dw_font.c:85:12:utf8_compare	3
+../Core/Src/dw_font.c:99:16:is_utf8	2
+../Core/Src/dw_font.c:108:16:get_utf8_format	3
+../Core/Src/dw_font.c:132:16:findsymbol	2
+../Core/Src/dw_font.c:151:13:internal_draw_bitmap	5
+../Core/Src/dw_font.c:178:16:is_overhead_lv1_symbol	3
+../Core/Src/dw_font.c:190:16:is_overhead_lv2_symbol	3
+../Core/Src/dw_font.c:202:16:is_padding_symbol	3
+../Core/Src/dw_font.c:214:16:is_under_symbol	3
+../Core/Src/dw_font.c:226:16:should_padding	11
+../Core/Src/dw_font.c:249:6:dw_font_init	1
+../Core/Src/dw_font.c:263:6:dw_font_setfont	1
+../Core/Src/dw_font.c:269:6:dw_font_goto	1
+../Core/Src/dw_font.c:277:6:dw_font_print	10
